@@ -1,0 +1,1297 @@
+@font-face {
+  font-family: "garet";
+  src: url("Polices/Garet/Garet-Book.woff2") format("woff2"),
+    url("Polices/Garet/Garet-Book.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "capture";
+  src: url("Polices/capture/Capture_It/Capture_it.woff2") format("woff2"),
+    url("Polices/capture/Capture_It/Capture_it.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "K2D";
+  src: url("Polices/K2D/K2D_Regular/K2D_Regular.woff2") format("woff2"),
+    url("Polices/K2D/K2D_Regular/K2D_Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+  scroll-behavior: smooth;
+}
+header {
+  background-color: #1c1c34;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  border-radius: 0 0 1.5rem 1.5rem;
+}
+
+header #logoPC {
+  width: 33%;
+  flex: 1;
+  margin-left: 2rem;
+}
+
+header #logoSmartphone img {
+  width: 0;
+  height: 0;
+}
+
+header #logoPC img {
+  width: 75%;
+  margin-top: -20px;
+}
+
+header #nav-search {
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+}
+
+header nav {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header #degrade-search-bar,
+header #search-bar-content {
+  border-radius: 15rem;
+}
+
+header #degrade-search-bar {
+  padding: 2px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 122, 0, 1) 0%,
+    rgba(255, 0, 0, 0.6) 100%
+  );
+}
+
+header #search-bar-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #25284c;
+  color: rgba(255, 255, 255, 0.75);
+  padding: 0.5rem 1rem;
+}
+
+header #search-bar-content p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
+  font-size: 1.5rem;
+  font-family: "K2D", Arial, sans-serif;
+}
+
+header #search-bar-content img {
+  width: 2rem;
+  height: 2rem;
+}
+
+header nav ul {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+header nav ul li {
+  width: 12em;
+  text-align: center;
+  list-style-type: none;
+  background-color: #25284c;
+  padding: 6px 2px;
+  border-radius: 0.6rem;
+  font-family: "K2D", arial, sans-serif;
+}
+
+header nav ul a {
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+header #degrade-nav1,
+header #degrade-nav2,
+header #degrade-nav3 {
+  border-radius: 0.7rem;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 122, 0, 1) 0%,
+    rgba(255, 0, 0, 0.6) 100%
+  );
+  height: 49px;
+  display: flex;
+  align-items: center;
+}
+
+footer {
+  display: flex;
+  background-color: #1c1c34;
+  color: white;
+  justify-content: space-around;
+  padding: 20px;
+  border-radius: 1.5rem 1.5rem 0 0;
+  margin-top: 30px;
+}
+
+footer section {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+footer section nav ul {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+footer section nav ul li {
+  list-style-type: none;
+  font-size: larger;
+  font-family: "K2D", arial, sans-serif;
+}
+
+footer nav ul li img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+footer section h4 {
+  font-size: 1.2em;
+  text-decoration: underline;
+  margin-top: 10px;
+  font-family: "K2D", arial, sans-serif;
+}
+
+footer a,
+footer #telephone {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+/* Media query for smartphones (header & footer)*/
+@media only screen and (max-width: 780px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header #logoPC {
+    height: 0;
+    width: 0;
+  }
+
+  header #logoSmartphone img {
+    width: 90px;
+    height: 90px;
+  }
+
+  header #logoSmartphone {
+    width: 100%;
+    margin-top: -20px;
+  }
+
+  header #nav-search {
+    width: 100%;
+  }
+
+  header #nav-search #search-bar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  header #nav-search #search-bar #degrade-search-bar {
+    width: 70%;
+    margin-top: -65px;
+  }
+
+  header nav {
+    margin-top: 1rem;
+  }
+
+  header #search-bar-content p {
+    font-size: 1rem;
+  }
+
+  header nav ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  header nav ul li {
+    width: 100%;
+    max-height: 8.7vh;
+    padding: 1.3rem 0;
+    display: flex;
+    align-items: center;
+  }
+
+  header nav ul a {
+    font-size: 1rem;
+    height: 2.4vh;
+    margin: 0 0.3rem;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+  }
+
+  header #degrade-nav1,
+  header #degrade-nav2,
+  header #degrade-nav3 {
+    padding: 7px 2px;
+  }
+
+
+  footer section {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  footer section nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer #reseaux{
+    padding-left: 25px;
+  }
+
+  footer section nav ul li {
+    width: 100%;
+    text-align: center;
+    font-size: 3.5vw;
+    margin-bottom: 0.5rem;
+  }
+
+  footer section h4 {
+    text-align: center;
+  }
+  footer > section + section > nav > ul {
+    padding: 0;
+  }
+}
+
+body {
+  margin: 0;
+  background-color: #6d6bc9;
+  scroll-behavior: smooth;
+}
+
+main h1 {
+  text-align: center;
+  background-color: #403f77;
+  border-radius: 100px;
+  height: 90px;
+  margin: 30px 49px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "capture", arial, sans-serif;
+  color: #cec359;
+  font-size: 3em;
+  text-decoration: underline;
+  font-weight: lighter;
+}
+
+main h1.h1-blanc {
+  text-align: center;
+  color: white;
+  background-color: #403f77;
+  border-radius: 100px;
+  height: 90px;
+  margin: 30px 49px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "K2D";
+  font-size: 2.5em;
+  text-decoration: none;
+}
+
+main h2.h1-blanc {
+  text-align: center;
+  color: white;
+  background-color: #403f77;
+  border-radius: 100px;
+  margin: 15px 69px 0;
+  display: flex;
+  justify-content: center;
+  font-family: "K2D";
+  padding: 20px;
+  font-size: 2em;
+  text-decoration: none;
+}
+
+/********************
+**     Saison      **
+********************/
+
+main section #S123 #saison1,
+main section #S123 #saison2,
+main section #S123 #saison3 {
+  width: 339px;
+  margin-bottom: 15px;
+}
+
+main section #S45 #saison4,
+main section #S45 #saison5 {
+  width: 339px;
+  margin-top: 15px;
+}
+
+#saison5 a{
+  text-decoration: none;
+  color: white;
+}
+
+main section #S123,
+main section #S45 {
+  justify-content: space-evenly;
+}
+
+main > section > div {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+main section div .picto {
+  display: flex;
+  flex-direction: row;
+  padding-left: 45px;
+  margin: 20px auto;
+}
+
+main section div .picto p {
+  margin: auto 20px;
+}
+
+main section div article p {
+  margin: 5px 0;
+}
+
+main section div article figure figcaption {
+  text-align: justify;
+  width: 339px;
+  margin-top: 10px;
+}
+
+main section div article figure .back {
+  border-radius: 10px;
+  filter: opacity(60%);
+}
+
+main section div article figure .front {
+  position: absolute;
+  left: 96.5px;
+  z-index: 1;
+  max-width: 100%;
+}
+
+main section div article figure {
+  position: relative;
+  margin-left: 0;
+}
+
+main section #traitPC img {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  border-radius: 10px;
+  filter: opacity(20%);
+}
+main section div .traitSmartphone {
+  width: 0;
+  height: 0;
+  filter: opacity(0%);
+}
+
+/*********************
+**    Présentation  **
+*********************/
+body::-webkit-scrollbar,
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+main section {
+  background-color: #403f77;
+  padding: 2vh;
+  border-radius: 2vw;
+  font-family: "garet", arial, sans-serif;
+  color: white;
+  font-weight: lighter;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+main .border-degrade {
+  padding: 3px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 122, 0, 1),
+    rgba(255, 0, 0, 0.6)
+  );
+  margin: 5px;
+  margin-bottom: 0;
+  border-radius: 13px;
+}
+
+main section ::-webkit-scrollbar {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+main section ::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 100vw;
+}
+
+main .border-degrade article {
+  background-color: #403f77;
+  margin: 0;
+  border-radius: 11px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar-corner {
+  color: transparent;
+}
+
+main > h1 + section > h2 {
+  text-decoration: none;
+  font-family: "K2D", Arial, sans-serif;
+}
+main > h1 + section > h2.h2-jaune {
+  text-decoration: underline;
+  font-size: 5vh;
+  margin-left: 0px;
+  padding-top: 20px;
+}
+
+main > h1 + section > h2{
+  display: flex;
+  justify-content: center;
+  margin-left: 0;
+  font-size: 2em;
+}
+
+main > h1 + section > p {
+  display: flex;
+  justify-content: center;
+  margin-left: 0;
+  font-size: 1.4em;
+}
+
+main h2 {
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  font-family: "capture", arial, sans-serif;
+  color: white;
+  text-decoration: none;
+  font-size: 4vh;
+}
+main h2.h2-jaune,
+div.backstage h2 {
+  margin-left: 10px;
+  margin-top: 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  font-family: "capture", arial, sans-serif;
+  color: #cec359;
+  font-weight: lighter;
+  text-decoration: none;
+}
+main > h2.h2-jaune {
+  text-decoration: underline;
+}
+main article h3 {
+  font-family: "capture", arial, sans-serif;
+  color: #cec359;
+  font-weight: lighter;
+  font-size: 3vh;
+  margin-bottom: 10px;
+}
+
+main h1.h1-blanc {
+  font-size: 3.3vw;
+}
+
+main > div.qui-sommes-nous > h1.h1-blanc + section > h3 {
+  font-family: "capture", arial, sans-serif;
+  color: #cec359;
+  font-weight: lighter;
+  font-size: 4vh;
+}
+main > div.qui-sommes-nous > h1.h1-blanc + section {
+  padding-top: 1px;
+  margin: auto 49px;
+  text-indent: 20px;
+  text-align: justify;
+}
+main section#liste-saisons article h3 {
+  font-size: 1.5rem;
+  margin-bottom: -9px;
+}
+
+main > h1.h1-blanc + section > h3 + p {
+  font-size: 1.4vw;
+  margin-right: 3vw;
+}
+
+main > section {
+  margin: 30px 49px;
+}
+main > section#presentation {
+  font-size: 2.2vh;
+  padding: 10px 15px;
+}
+
+main > section > p {
+  margin-left: 3vw;
+}
+
+main > section > div > div > #afficheS1 {
+  border-radius: 20px;
+  width: 30vw;
+  height: 90vh;
+  object-fit: cover;
+}
+
+main > section > div > div > #afficheS5{
+  border-radius: 20px;
+  width: 30vw;
+  height: 98vh;
+  object-fit: cover;
+}
+
+main > section > div > div > div > div article h3 {
+  padding-top: 0;
+}
+
+.image-infos {
+  display: flex;
+}
+
+.bande-annonce div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 27vh;
+}
+
+.bande-annonce video {
+  width: 80%;
+  display: flex;
+  align-items: center;
+}
+
+main section .sections-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+main section .section-pair {
+  width: 48%;
+  flex-direction: row-reverse;
+}
+
+.etoile {
+  width: 15%;
+  margin: -15px -5px;
+}
+
+.synopsis p {
+  margin: auto 15px;
+  font-size: 2.2vh;
+  text-align: justify;
+}
+
+.notes,
+.informations,
+.synopsis,
+.bande-annonce {
+  padding-bottom: 2vh;
+}
+
+.notes h3,
+.informations h3,
+.synopsis h3,
+.bande-annonce h3 {
+  margin-left: 15px;
+}
+
+.saison5 .notes h3,
+.saison5 .informations h3,
+.saison5 .synopsis h3,
+.saison5 .bande-annonce h3 {
+  margin-bottom: 4vh;
+}
+
+.synopsis,
+.bande-annonce {
+  height: 37vh;
+}
+
+.notes,
+.informations {
+  height: 45vh;
+  margin-bottom: 0;
+}
+
+.saison5 .notes,
+.saison5 .informations,
+.saison5 .synopsis,
+.saison5 .bande-annonce {
+  height: 45vh;
+}
+
+.saison5 .synopsis p {
+  font-size: 1.3vw;
+}
+.informations .icone-infos figure img {
+  height: 4vh;
+  width: min-content;
+}
+
+.saison5 .informations .icone-infos figure img {
+  height: 8vh;
+}
+
+.informations .icone-infos figure figcaption {
+  text-align: left;
+  margin-left: 1vw;
+  color: white;
+}
+
+.informations .icone-infos figure {
+  width: 3vw;
+  display: flex;
+  align-items: center;
+}
+.saison5 .informations .icone-infos figure {
+  margin-bottom: 0;
+}
+
+.informations a {
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.informations {
+  position: relative;
+}
+
+.informations > img {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  width: 3vw;
+  height: 3vw;
+}
+
+.notes p {
+  margin-left: 1vw;
+}
+
+.note {
+  display: flex;
+  align-items: baseline;
+  margin-left: 1vw;
+}
+
+#liste-saisons .note {
+  margin: 0;
+}
+#liste-saisons .note img {
+  margin: -3px;
+}
+
+.informations .icone-infos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.informations .icone-infos figure {
+  width: calc(33.33% - 20px);
+  box-sizing: border-box;
+  text-align: center;
+  margin-bottom: 2px;
+}
+
+.informations .icone-infos figure img {
+  height: 4vh;
+  width: min-content;
+}
+
+.informations .icone-infos figure figcaption {
+  margin-top: 5px;
+}
+
+.createur-casting {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 49px;
+}
+
+/***********************************/
+/*             CREATEUR            */
+/***********************************/
+
+.createur {
+  width: 33%;
+}
+
+.createur img {
+  width: 50%;
+  height: 50%;
+  border-radius: 20px;
+  margin-right: 1.2vw;
+}
+
+.createur .informations-createur {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 2.2vh;
+  margin-left: 1.2vw;
+}
+
+.createur div dl dt {
+  color: #cec359;
+}
+
+.createur div dl h3 {
+  font-size: 1.5vw;
+  font-family: "K2D", arial, sans-serif;
+}
+
+/***********************************/
+/*             CASTING             */
+/***********************************/
+
+.casting {
+  width: 63%;
+  margin-left: 15px;
+}
+
+.casting .acteurs {
+  overflow-x: scroll;
+  display: flex;
+  margin-right: 1.5vw;
+}
+
+.casting .acteurs ::-webkit-scrollbar,
+.casting .acteurs ::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 100vw;
+}
+
+.casting .acteurs figure img {
+  width: 10vw;
+  border-radius: 20px;
+}
+
+.casting .acteurs figure figcaption p {
+  font-size: 0.872vw;
+  text-align: center;
+}
+
+/***********************************/
+/*           SUGGESTIONS           */
+/***********************************/
+
+#suggestions .films {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 1vw;
+  overflow-x: scroll;
+}
+
+#suggestions .films::-webkit-scrollbar-thumb,
+#suggestions .films::-webkit-scrollbar {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 100vw;
+  align-items: center;
+}
+
+#suggestions .films img {
+  height: 65vh;
+  object-fit: cover;
+}
+
+#suggestions .films figcaption {
+  text-align: center;
+}
+
+/***********************************/
+/*           BACKSTAGE           */
+/***********************************/
+
+div.backstage section {
+  height: auto;
+  display: inline-block;
+  flex-direction: row;
+  align-content: center;
+  flex-wrap: wrap;
+  color: #fff;
+  background-color: #403f77;
+  align-items: center;
+  border-radius: 2vw;
+  margin: auto 49px;
+  vertical-align: top;
+  text-align: center;
+  align-items: center;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+div.backstage section img {
+  width: 50%;
+  border-radius: 2vw;
+}
+
+div.backstage section > h2 {
+  margin-left: 15px;
+  text-align: left;
+  font-size: 30px;
+}
+
+div.backstage section > h3 {
+  color: #fff;
+  font-family: K2D;
+  font-size: 1.4em;
+}
+
+div.backstage section > p {
+  margin-left: 30px;
+  margin-top: -30px;
+  text-align: left;
+  color: #fff;
+  text-align: justify;
+  font-family: Garet;
+  font-size: 1.2vw;
+  font-style: normal;
+  font-weight: lighter;
+  line-height: normal;
+}
+
+div.backstage section > h2 + p + h3 + img + p {
+  margin: 0.8em 5%;
+  font-size: 20px;
+  text-align: justify;
+}
+
+div.backstage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+div.backstage section {
+  width: 45%;
+  margin: 2em 0;
+}
+
+/* EPISODES */
+.episodeSaison5 .border-degrade div {
+  background-color: #403f77;
+  margin: 0;
+  border-radius: 0px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.episodeSaison5 .border-degrade {
+  padding: 4px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 122, 0, 1),
+    rgba(255, 0, 0, 0.6)
+  );
+  margin: 1% 5%;
+  border-radius: 20px;
+}
+
+.episodeSaison5 figure {
+  width: 25%;
+  height: 25%;
+  padding: 15px;
+  margin: 15px;
+}
+
+.episodeSaison5 .border-degrade div {
+  border-radius: 20px;
+}
+.episodeSaison5 img {
+  border-radius: 19px;
+  width: 100%;
+  height: 100%;
+}
+.episodeSaison5 figcaption {
+  margin-top: 6px;
+}
+.episodeSaison5 p {
+  text-align: justify;
+}
+.ligne-episode-morg {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* CASTING */
+.casting-ligne-morg {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.casting-ligne-morg figure {
+  text-align: center;
+}
+.casting-ligne-morg figure figcaption {
+  margin-top: 5px;
+}
+.casting-ligne-morg figure img {
+  width: 16vw;
+  border-radius: 15px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+.casting-container-morg {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow-y: scroll;
+}
+
+/* GALERIE */
+.photoGalerie {
+  width: 338px;
+  height: 335px;
+  overflow: hidden;
+  margin: 40px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+}
+.photoGalerie img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+}
+.galerie-ligne-morg {
+  display: flex;
+  justify-content: center;
+}
+.galerie-ligne-morg .img-saison5-morg {
+  height: 335px;
+  margin: 40px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+  border-radius: 0;
+  object-fit: contain;
+  width: auto;
+}
+.container-galerie-morg {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+}
+
+@media only screen and (max-width: 780px) {
+
+  /*PRESENTATION*/
+  main section {
+    margin: 30px 10px;
+    border-radius: 20px;
+  }
+  main > h1 + section > p{
+    font-size: 1.2em;
+    text-align: center;
+  }
+
+  .createur-casting{
+    margin: 30px 10px;
+    border-radius: 20px;
+    display: block;
+  }
+
+  .casting{
+    width: auto;
+    margin: 30px 0;
+  }
+
+  main h1 {
+    margin: 30px 10px;
+    font-size: 2.5em;
+  }
+  
+  main h1.h1-blanc{
+    margin: 30px 10px;
+    font-size: 2em;
+  }
+
+  main > article,
+  .createur-casting {
+    font-size: 16px;
+  }
+  main section .image-infos #afficheS1,
+  main section .image-infos #afficheS5 {
+    width: 80vw;
+    height: auto;
+    margin: auto;
+    display: block;
+  }
+
+  .createur {
+    width: fit-content;
+    margin: auto 0;
+  }
+  .informations > img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 9vw;
+    height: 9vw;
+  }
+
+  main section .sections-container {
+    flex-direction: column;
+    width: 100%;
+  }
+  main section .section-pair {
+    width: 82vw;
+  }
+  .synopsis,
+  .bande-annonce,
+  .notes,
+  .informations {
+    height: auto;
+  }
+  .image-infos {
+    flex-direction: column;
+  }
+  #divCentrée, .saison5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .notes .note {
+    align-items: baseline;
+  }
+
+  .notes p {
+    font-size: 3.5vw;
+    margin-left: 3vw;
+  }
+  .bande-annonce div {
+    height: auto;
+  }
+  .createur div dl h3 {
+    font-size: 2.7vh;
+  }
+
+  .casting .acteurs {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    overflow-x: auto;
+    
+  }
+  .casting .acteurs figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 35%;
+    margin-bottom: 10px;
+  }
+  .createur img {
+    width: 40%;
+  }
+  .casting .acteurs figure img {
+    width: 50vw;
+  }
+  .casting .acteurs figure figcaption p {
+    font-size: 4vw;
+    width: 200px;
+    margin: 5px;
+  }
+  #suggestions .films img {
+    height: 24vh;
+  }
+  #suggestions .films figure {
+    margin-right: 1vw;
+  }
+
+  /*SAISON */
+
+  main section h2 {
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+
+  #S123,
+  #S45 {
+    display: inline-block;
+    text-align: left;
+  }
+
+  main section div .traitSmartphone {
+    width: 339px;
+    height: 4px;
+    filter: opacity(20%);
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #traitPC img, .traitSmartphone img {
+    border-radius: 2px;
+    width: 339px;
+    height: 4px;
+  }
+
+  #saison4,
+  #saison2,
+  #saison3 {
+    margin: 25px 0 10px 0;
+  }
+
+  #saison1 {
+    margin-bottom: 10px;
+  }
+
+  #saison5 {
+    margin-top: 25px;
+  }
+
+  section#liste-saisons {
+    text-align: center;
+  }
+
+  /* Saison5 */
+
+  .saison5 .synopsis p {
+    margin: auto 15px;
+    font-size: 2.2vh;
+  }
+
+  .saison5 .synopsis {
+    height: auto;
+  }
+
+  .saison5 .bande-annonce {
+    height: auto;
+  }
+
+  .saison5 .notes {
+    height: auto;
+  }
+
+  .saison5 .informations {
+    height: auto;
+  }
+
+  .ligne-episode-morg {
+    display: inline-block;
+  }
+
+  .episodeSaison5 figure {
+    width: auto;
+  }
+
+  .casting-ligne-morg {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .casting-ligne-morg figure img{
+    width: 50vw;
+  }
+
+  section .casting-ligne-morg figure {
+    width: 100%;
+    margin: 20px;
+  }
+
+  .photoGalerie {
+    width: 39vw;
+    height: 39vw;
+    margin: 15px;
+  }
+  .galerie-ligne-morg .img-saison5-morg {
+    height: 39vw;
+    margin: 15px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0);
+  }
+  .galerie-ligne-morg {
+    flex-direction: column;
+    align-items: center
+  }
+
+  .container-galerie-morg {
+    flex-wrap: nowrap;
+  }
+
+  /* QUI SOMMES NOUS */
+  main > div.qui-sommes-nous > h1.h1-blanc + section{
+    margin: 30px 10px;
+  }
+
+  /* BACKSTAGE*/
+  main h2.h1-blanc{
+    margin: -15px 30px 0 30px;
+    font-size: 2em;
+  }
+
+  div.backstage section{
+    width: 100%;
+    margin: 20px 10px;
+    font-size: 20px;
+    border-radius: 20px;
+  }
+
+  div.backstage section > h2 + p{
+    font-size: 0.8em;
+    margin: -10px 0 0 20px;
+  }
+
+  div.backstage section > h2{
+    font-size: 28px;
+    margin-left: 5px;
+    padding-left: 0;
+  }
+
+  div.backstage section > h2 + p + h3 + img + p{
+    font-size: 1em;
+  }
+}
